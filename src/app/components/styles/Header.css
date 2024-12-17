@@ -1,0 +1,24 @@
+.slide1Bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url('/images/bed1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section1 {
+  background-image: url('/images/bed1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section1:hover {
+  scale: 1.05;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white !important;
+}
