@@ -336,6 +336,51 @@ export const navData = {
       },
     },
   },
+  OutdoorLighting: {
+    type: 2,
+    categoryText: 'Shop by Room',
+    subCategoryText: 'Outdoor Lights',
+
+    categories: {
+      'Dining Room': {
+        link: '/dining-room',
+
+        imgs: ['/images/dining1.jpg', '/images/dining2.jpg'],
+      },
+
+      'Living Room': {
+        link: '/living-room',
+
+        imgs: ['/images/living1.jpg', '/images/living2.jpg'],
+      },
+
+      'Bed Room': {
+        link: '/bedroom',
+
+        imgs: ['/images/bedroom1.jpg', '/images/bedroom2.jpg'],
+      },
+    },
+
+    subcategories: {
+      'Modern Chandeliers': {
+        link: '/modern-chandeliers',
+
+        imgs: ['/images/chandelier1.jpg', '/images/chandelier2.jpg'],
+      },
+
+      'Crystal Chandeliers': {
+        link: '/crystal-chandeliers',
+
+        imgs: ['/images/chandelier3.jpg', '/images/chandelier4.jpg'],
+      },
+
+      'Ceiling Lights': {
+        link: '/ceiling-lights',
+
+        imgs: ['/images/ceiling1.jpg', '/images/ceiling2.jpg'],
+      },
+    },
+  },
 
   otherLinks: [
     { name: 'Electrical Supplies', link: '/electrical-supplies' },

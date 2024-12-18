@@ -32,10 +32,13 @@ export default function NavBar() {
               Shop By
               <span className='font-bold'>
                 <Image
-                  src={'/images/icons/ArrowDown.svg'}
+                  src='/images/icons/ArrowDown.svg'
                   alt='menu-arrow'
                   width={16}
                   height={16}
+                  className={`transition-transform duration-300 ${
+                    hoveredLink === 'shopBy' ? 'rotate-180' : 'rotate-0'
+                  }`}
                 />
               </span>
             </Link>
@@ -46,23 +49,29 @@ export default function NavBar() {
             >
               Indoor Lighting
               <Image
-                src={'/images/icons/ArrowDown.svg'}
+                src='/images/icons/ArrowDown.svg'
                 alt='menu-arrow'
                 width={16}
                 height={16}
+                className={`transition-transform duration-300 ${
+                  hoveredLink === 'IndoorLighting' ? 'rotate-180' : 'rotate-0'
+                }`}
               />
             </Link>
             <Link
               href='#'
-              onMouseEnter={() => setHoveredLink('IndoorLighting')}
+              onMouseEnter={() => setHoveredLink('OutdoorLighting')}
               className='flex gap-3 items-center'
             >
               Outdoor Lighting
               <Image
-                src={'/images/icons/ArrowDown.svg'}
+                src='/images/icons/ArrowDown.svg'
                 alt='menu-arrow'
                 width={16}
                 height={16}
+                className={`transition-transform duration-300 ${
+                  hoveredLink === 'OutdoorLighting' ? 'rotate-180' : 'rotate-0'
+                }`}
               />
             </Link>
             <Link
@@ -79,7 +88,7 @@ export default function NavBar() {
             </Link>
 
             <div
-              className='relative text-lg '
+              className='relative text-lg'
               onMouseEnter={() => setHoveredLink('highlights')}
               onMouseLeave={() => setHoveredLink(null)}
             >
@@ -90,24 +99,27 @@ export default function NavBar() {
                   alt='menu-arrow'
                   width={16}
                   height={16}
+                  className={`transition-transform duration-300 ${
+                    hoveredLink === 'highlights' ? 'rotate-180' : 'rotate-0'
+                  }`}
                 />
               </Link>
               {hoveredLink === 'highlights' && (
-                <div className='absolute w-full top-full left-0 mt-0  bg-white shadow-lg rounded'>
+                <div className='absolute w-full top-full left-0 mt-0 bg-white shadow-lg rounded'>
                   <Link
                     href='/best-seller'
                     className='block px-4 py-2 hover:bg-gray-100 border-b border-gray-300'
                   >
                     Best Seller
                   </Link>
-                  <Link href='#' className='block px-4 py-2 hover:bg-gray-100 '>
+                  <Link href='#' className='block px-4 py-2 hover:bg-gray-100'>
                     New Arrivals
                   </Link>
                 </div>
               )}
             </div>
             <div
-              className='relative text-lg '
+              className='relative text-lg'
               onMouseEnter={() => setHoveredLink('more')}
               onMouseLeave={() => setHoveredLink(null)}
             >
@@ -118,6 +130,9 @@ export default function NavBar() {
                   alt='menu-arrow'
                   width={16}
                   height={16}
+                  className={`transition-transform duration-300 ${
+                    hoveredLink === 'more' ? 'rotate-180' : 'rotate-0'
+                  }`}
                 />
               </Link>
               {hoveredLink === 'more' && (
