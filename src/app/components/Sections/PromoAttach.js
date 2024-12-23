@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PromoAttach() {
   return (
-    <div className=' mx-20 py-32 my-10 flex items-center promoAttach'>
+    <div className=' mx-20 py-32 my-10 flex items-center promoAttach rounded-lg'>
       <div className='w-1/2'></div>
       <div className='w-1/2 flex flex-col gap-5'>
         <div className='bg-white border-l-4 border-red-500 p-4'>

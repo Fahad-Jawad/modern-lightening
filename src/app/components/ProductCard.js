@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { useModal } from '@/app/Contexts/ModalContext';
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, className = '' }) {
   const { openModal } = useModal();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -15,9 +15,9 @@ export default function ProductCard({ product }) {
 
   return (
     <div
-      className={`w-full rounded-lg flex flex-col gap-4 px-4 min-h-[400px] cursor-pointer aspect-square product-card ${
-        isVisible ? 'fade-up' : 'opacity-0'
-      }`}
+    className={`w-full rounded-lg flex flex-col gap-4 px-4 min-h-[400px] cursor-pointer aspect-square product-card ${
+      isVisible ? 'fade-up' : 'opacity-0'
+    } ${className}`}
       onClick={() => openModal(product)}
     >
       <div className='relative w-full h-4/5'>

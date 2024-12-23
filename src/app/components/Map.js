@@ -9,7 +9,7 @@ export default function Map() {
         height='450'
         allowFullScreen=''
         loading='lazy'
-        className='w-full'
+        className='w-full rounded-lg'
         referrerPolicy='no-referrer-when-downgrade'
       ></iframe>
     </div>

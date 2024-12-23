@@ -18,6 +18,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html{
+  position: relative;
 }
 
 .underline-animation {
@@ -59,14 +64,14 @@ body {
 }
 
 .promo1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/promo1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .promo2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/promo2.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,7 +79,7 @@ body {
 }
 
 .promoAttach {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/bgAttached.png');
   background-size: cover;
   background-attachment: fixed;
@@ -83,7 +88,7 @@ body {
   background-position: center;
 }
 .testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/testimonials.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,14 +96,14 @@ body {
 }
 
 .Scandinavian1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/Scandinavian1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .Chandeliers3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/Chandeliers3.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,18 +111,26 @@ body {
 }
 
 .aboutUs {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/aboutbg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .contactUs {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
     url('/images/contactbg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.statsSection{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)),
+  url('/images/statsBg.png');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
 }
 
 .whyUsImg1 {
@@ -147,6 +160,16 @@ body {
 
 .filter-sidebar::-webkit-scrollbar-track {
   background-color: transparent; /* Light gray track (matches Tailwind's gray-200) */
+}
+
+.outline-text {
+  color: transparent; /* Makes the text hollow */
+  -webkit-text-stroke: 1px black; /* Blue outline */
+}
+
+.active-small-category .small-category-text {
+  color: white; /* Solid text on hover */
+  -webkit-text-stroke: 0; /* Removes the outline on hover */
 }
 
 @keyframes fadeUp {

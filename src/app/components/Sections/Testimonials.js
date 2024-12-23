@@ -16,14 +16,18 @@ export default function Testimonials() {
     <div className='mx-20 py-10  relative '>
       <div className='testimonials z-10 h-2/3 w-full absolute top-0'></div>
       <div className='flex flex-col w-2/3 mx-auto py-10 relative z-20 text-white'>
-        <h2>Clients Testimonials</h2>
+        <h2 data-aos='fade-right'
+          data-aos-delay='100'>Clients Testimonials</h2>
         <div className='flex justify-between my-4 items-center'>
-          <h3 className='text-5xl leading-tight font-bold capitalize'>
+          <h3 className='text-5xl leading-tight font-bold capitalize' data-aos='zoom-in'
+          data-aos-delay='200'>
             see what our client <br /> says about us
           </h3>
 
           <div className='flex gap-4'>
-            <button className='p-4 bg-white rounded-lg h-max'>
+            <button className='p-4 bg-white rounded-lg h-max'
+            data-aos='fade-left'
+          data-aos-delay='200'>
               <Image
                 src={'/images/icons/ArrowSlideLeft.svg'}
                 alt='testimonial'
@@ -32,7 +36,9 @@ export default function Testimonials() {
                 onClick={() => swiper.slidePrev()}
               />
             </button>
-            <button className='p-4 bg-white rounded-lg h-max'>
+            <button className='p-4 bg-white rounded-lg h-max'
+            data-aos='fade-right'
+          data-aos-delay='200'>
               <Image
                 src={'/images/icons/ArrowSlideRight.svg'}
                 alt='testimonial'

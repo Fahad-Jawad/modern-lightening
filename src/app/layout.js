@@ -25,19 +25,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en" className="h-full overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative h-full`}
       >
         <ModalProvider>
-          <TopBar />
-          <NavBar />
-          {children}
-          <Footer />
-          <WhatsAppButton />
+          {/* Sticky Header */}
+          
+          {/* Main Content */}
+          <main className="relative">
+          <div className="sticky top-0 z-50 bg-white shadow-md">
+            <TopBar />
+            <NavBar />
+          </div>
+            {children}</main>
+          {/* Other Components */}
           <ProductModal />
         </ModalProvider>
       </body>
+      
     </html>
   );
 }
+
