@@ -57,9 +57,9 @@ export default function Footer() {
           <h2 className='text-xl font-bold uppercase '>Contact Us</h2>
           <div className='flex flex-col justify-between gap-3'>
             <div className='flex gap-5 items-center'>
-              <div className='bg-primary rounded-full p-2'>
+              <div className='bg-white rounded-full p-2'>
                 <Image
-                  src={'/images/icons/Phone.svg'}
+                  src={'/images/icons/PhoneBlack.svg'}
                   alt='modern design'
                   width={20}
                   height={20}
@@ -71,9 +71,9 @@ export default function Footer() {
               </div>
             </div>
             <div className='flex gap-5 items-center'>
-              <div className='bg-primary rounded-full p-2'>
+              <div className='bg-white rounded-full p-2'>
                 <Image
-                  src={'/images/icons/Location.svg'}
+                  src={'/images/icons/MailBlack.svg'}
                   alt='modern design'
                   width={21}
                   height={21}
@@ -86,12 +86,12 @@ export default function Footer() {
             </div>
 
             <div className='flex gap-5 items-center'>
-              <div className='bg-primary rounded-full p-2'>
+              <div className='bg-white rounded-full p-2'>
                 <Image
-                  src={'/images/icons/Mail.svg'}
+                  src={'/images/icons/LocationBlack.svg'}
                   alt='modern design'
-                  width={20}
-                  height={20}
+                  width={26}
+                  height={26}
                 />
               </div>
               <div className='flex flex-col gap-1'>

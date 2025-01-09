@@ -40,7 +40,7 @@ export default function ContactUs() {
           >
             <div className='bg-primary rounded-full p-3'>
               <Image
-                src={'/images/icons/Location.svg'}
+                src={'/images/icons/Mail.svg'}
                 alt='modern design'
                 width={27}
                 height={27}
@@ -59,7 +59,7 @@ export default function ContactUs() {
           >
             <div className='bg-primary rounded-full p-3'>
               <Image
-                src={'/images/icons/Mail.svg'}
+                src={'/images/icons/Location.svg'}
                 alt='modern design'
                 width={25}
                 height={25}
