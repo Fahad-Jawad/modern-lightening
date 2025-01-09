@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function TopBar() {
   return (
-    <div className='flex justify-between items-center px-20 py-4'>
+    <div className='flex justify-between items-center px-4 md:px-8 lg:px-12 2xl:px-20 py-4'>
       <div className='flex gap-5'>
         <div className='flex items-center gap-3'>
           <Image
@@ -25,41 +26,42 @@ export default function TopBar() {
         </div>
       </div>
       <div className='flex items-center gap-3'>
-          <Image
-            src={'/images/icons/Address.svg'}
-            alt='facebook-icon'
-            width={18}
-            height={18}
-          />
-          <p className='text-sm font-medium'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et nihil quas tempora</p>
-        </div>
-      <div className='flex gap-5'>
+        <Image
+          src={'/images/icons/Address.svg'}
+          alt='facebook-icon'
+          width={18}
+          height={18}
+        />
         <p className='text-sm font-medium'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et
+          nihil quas tempora
+        </p>
+      </div>
+      <div className='flex gap-5'>
+        <Link href='/'>
           <Image
             src={'/images/icons/FacebookIcon.svg'}
             alt='facebook-icon'
             width={18}
             height={18}
           />
-        </p>
-
-        <p className='text-sm font-medium'>
+        </Link>
+        <Link href='/'>
           <Image
             src={'/images/icons/InstaIcon.svg'}
             alt='facebook-icon'
             width={18}
             height={18}
           />
-        </p>
-
-        <p className='text-sm font-medium'>
+        </Link>
+        <Link href='/'>
           <Image
             src={'/images/icons/XIcon.svg'}
             alt='facebook-icon'
             width={18}
             height={18}
           />
-        </p>
+        </Link>
       </div>
     </div>
   );

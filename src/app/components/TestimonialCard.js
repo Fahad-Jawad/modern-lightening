@@ -4,7 +4,7 @@ import React from 'react';
 export default function TestimonialCard() {
   return (
     <div className='bg-white rounded-xl p-5 shadow-lg'>
-      <div className='flex justify-between items-center gap-5'>
+      <div className='flex justify-between lg:items-center gap-5 flex-col lg:flex-row'>
         <div className='flex gap-5 items-center'>
           <Image
             src={'/images/client1.jpg'}
@@ -15,7 +15,7 @@ export default function TestimonialCard() {
           />
           <div className='flex flex-col gap-1'>
             <h2 className='text-lg text-black font-bold'>Client Name</h2>
-            <p className='text-sm text-gray-300 font-semibold'>Client Designation</p>
+            <p className='text-sm text-primary font-semibold'>Client Designation</p>
           </div>
         </div>
         <div className='flex items-center'>

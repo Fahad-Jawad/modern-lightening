@@ -3,9 +3,9 @@ import React from 'react';
 
 export default function ContactUs() {
   return (
-    <div className='flex px-20 py-10'>
-      <div className='w-1/3'>
-        <h2 className='text-4xl font-bold uppercase' data-aos='zoom-in'>
+    <div className='flex px-4 md:px-8 lg:px-12 2xl:px-20 py-10 overflow-x-hidden flex-col lg:flex-row'>
+      <div className='w-full lg:w-1/3'>
+        <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold uppercase' data-aos='zoom-in'>
           Got some burning questions?
         </h2>
         <p className='my-5' data-aos='fade-right' data-aos-delay='100'>
@@ -20,7 +20,7 @@ export default function ContactUs() {
             data-aos='fade-up'
             data-aos-delay='200'
           >
-            <div className='bg-black rounded-full p-3'>
+            <div className='bg-primary rounded-full p-3'>
               <Image
                 src={'/images/icons/Phone.svg'}
                 alt='modern design'
@@ -38,7 +38,7 @@ export default function ContactUs() {
             data-aos='fade-up'
             data-aos-delay='300'
           >
-            <div className='bg-black rounded-full p-3'>
+            <div className='bg-primary rounded-full p-3'>
               <Image
                 src={'/images/icons/Location.svg'}
                 alt='modern design'
@@ -47,7 +47,7 @@ export default function ContactUs() {
               />
             </div>
             <div className='flex flex-col gap-1'>
-              <h3 className='text-xl font-bold '>Our Location</h3>
+              <h3 className='text-xl font-bold '>Official Email</h3>
               <p className='text-sm'>email@example.com</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function ContactUs() {
             data-aos='fade-up'
             data-aos-delay='400'
           >
-            <div className='bg-black rounded-full p-3'>
+            <div className='bg-primary rounded-full p-3'>
               <Image
                 src={'/images/icons/Mail.svg'}
                 alt='modern design'
@@ -66,7 +66,7 @@ export default function ContactUs() {
               />
             </div>
             <div className='flex flex-col gap-1'>
-              <h3 className='text-xl font-bold '>Official Email</h3>
+              <h3 className='text-xl font-bold '>Our Location</h3>
               <p className='text-sm'>
                 55 Main street , The Grand Avenue , New York City
               </p>
@@ -74,13 +74,13 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className='w-2/3 flex justify-end'>
-        <div className='w-2/3 rounded-xl shadow-2xl p-10' data-aos='zoom-in-left'
+      <div className='w-full lg:w-2/3 flex justify-end mt-10 lg:mt-0'>
+        <div className='w-full lg:w-2/3 rounded-xl shadow-2xl p-10' data-aos='zoom-in-left'
           data-aos-delay='100'>
-          <h2 className='text-xl font-semibold text-gray-300'>
+          <h2 className='text-base lg:text-xl font-semibold text-primary'>
             Have Question?
           </h2>
-          <h3 className='text-3xl font-bold my-2'>Send us a Message</h3>
+          <h3 className='text-2xl lg:text-3xl font-bold my-2'>Send us a Message</h3>
 
           <div className='mt-5 flex flex-col gap-5'>
             <div>
@@ -117,7 +117,7 @@ export default function ContactUs() {
               ></textarea>
             </div>
 
-            <button className='bg-black text-white p-3 px-6 rounded-xl w-max'>
+            <button className='bg-primary text-white p-3 px-6 rounded-xl w-max'>
               Submit
             </button>
           </div>

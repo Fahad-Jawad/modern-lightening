@@ -166,18 +166,18 @@ export default function InDemand() {
   }, []);
 
   return (
-    <div className='px-20 py-10'>
+    <div className='px-4 md:px-8 lg:px-12 2xl:px-20 py-10'>
       <div className='flex flex-col gap-2 text-center' data-aos='zoom-out-up'>
-        <h2 className='text-base text-gray-300'>Illuminate Every Space</h2>
-        <h3 className='text-4xl font-bold'>
+        <h2 className='text-base text-primary'>Illuminate Every Space</h2>
+        <h3 className='text-3xl lg:text-4xl lg:text-4xl font-bold'>
           Lighting Solutions for Every Need
         </h3>
       </div>
 
-      <div className='mt-12 w-full flex gap-4'>
+      <div className='mt-12 w-full flex gap-4 flex-col lg:flex-row'>
         {/* Left section for category details */}
-        <div className='flex flex-col w-1/2 gap-4'>
-          <h2 className='text-4xl font-bold w-2/3' data-aos='fade-right' data-aos-delay="50">
+        <div className='flex flex-col w-full lg:w-1/2 gap-4'>
+          <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold w-full lg:w-2/3' data-aos='fade-right' data-aos-delay="50">
             Find the Perfect Light for Every Setting
           </h2>
           <p className='text-base' data-aos='fade-down' data-aos-delay="100">
@@ -194,7 +194,7 @@ export default function InDemand() {
               key={category.name}
               className={`flex flex-col gap-2 p-4 rounded-lg small-category group transition-all duration-300 cursor-pointer ${
                 activeCategory === category.name
-                  ? 'bg-blue-100 active-small-category'
+                  ? 'bg-primaryLight active-small-category'
                   : ''
               }`}
               onClick={() => handleCategoryChange(category.name)}
@@ -204,7 +204,7 @@ export default function InDemand() {
                 <div
                   className={`p-2 small-category-text-div rounded-lg transition-all duration-400 ${
                     activeCategory === category.name
-                      ? 'bg-blue-500'
+                      ? 'bg-primary'
                       : 'bg-gray-100'
                   }`}
                 >
@@ -232,7 +232,7 @@ export default function InDemand() {
         </div>
 
         {/* Right section for products */}
-        <div className='flex flex-col items-center w-1/2 pl-12 py-8 h-full'>
+        <div className='flex flex-col items-center w-full lg:w-1/2 lg:pl-12 py-8 h-full'>
           <div className=''>
             {/* Display products for the active category */}
             {categories

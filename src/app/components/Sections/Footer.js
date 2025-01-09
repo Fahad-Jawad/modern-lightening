@@ -7,16 +7,21 @@ export default function Footer() {
   return (
     <>
       <Map />
-      <div className='bg-black py-8 px-20 text-white flex justify-between rounded-tl-3xl rounded-tr-3xl'>
-        <div className='w-1/4 flex flex-col gap-3'>
-          <h2 className='text-xl font-bold'>Company Logo</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            animi tempora obcaecati praesentium nulla, aliquid
-          </p>
+      <div className='bg-black py-8 px-4 md:px-8 lg:px-12 2xl:px-20 text-white flex justify-between rounded-tl-3xl rounded-tr-3xl flex-col lg:flex-row gap-8 lg:gap-0'>
+        <div className='w-full lg:w-1/4 flex flex-col gap-5 items-center lg:items-start'>
+          <div className='flex justify-center w-3/4'>
+            <Image
+              src={'/images/logoWhite.jpg'}
+              alt='modern-lighting logo'
+              width={160}
+              height={150}
+              className='rounded-xl'
+            />
+          </div>
+
         </div>
-        <div className='w-1/4 flex flex-col gap-3'>
-          <h2 className='text-xl font-bold'>Shop By</h2>
+        <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
+          <h2 className='text-xl font-bold uppercase '>Shop By</h2>
           <Link href='#' className='underline-animation-white w-max'>
             Shop By Room
           </Link>
@@ -30,8 +35,8 @@ export default function Footer() {
             Shop By Collection
           </Link>
         </div>
-        <div className='w-1/4 flex flex-col gap-3'>
-          <h2 className='text-xl font-bold'>Categories</h2>
+        <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
+          <h2 className='text-xl font-bold uppercase '>Categories</h2>
           <Link href='#' className='underline-animation-white w-max'>
             Chandelier
           </Link>
@@ -48,8 +53,58 @@ export default function Footer() {
             Outdoor
           </Link>
         </div>
-        <div className='w-1/4 flex flex-col gap-3'>
-          <h2 className='text-xl font-bold'>Social Link</h2>
+        <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
+          <h2 className='text-xl font-bold uppercase '>Contact Us</h2>
+          <div className='flex flex-col justify-between gap-3'>
+            <div className='flex gap-5 items-center'>
+              <div className='bg-primary rounded-full p-2'>
+                <Image
+                  src={'/images/icons/Phone.svg'}
+                  alt='modern design'
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <div className='flex flex-col gap-1'>
+                <h3 className='text-base font-bold '>Hotline</h3>
+                <p className='text-xs'>+1 888 988 4317</p>
+              </div>
+            </div>
+            <div className='flex gap-5 items-center'>
+              <div className='bg-primary rounded-full p-2'>
+                <Image
+                  src={'/images/icons/Location.svg'}
+                  alt='modern design'
+                  width={21}
+                  height={21}
+                />
+              </div>
+              <div className='flex flex-col gap-1'>
+                <h3 className='text-base font-bold '>Official Email</h3>
+                <p className='text-xs'>email@example.com</p>
+              </div>
+            </div>
+
+            <div className='flex gap-5 items-center'>
+              <div className='bg-primary rounded-full p-2'>
+                <Image
+                  src={'/images/icons/Mail.svg'}
+                  alt='modern design'
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <div className='flex flex-col gap-1'>
+                <h3 className='text-base font-bold '>Our Location</h3>
+                <p className='text-xs'>
+                  55 Main street , The Grand Avenue , New York City
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
+          <h2 className='text-xl font-bold uppercase '>Social Links</h2>
           <div className='flex gap-3'>
             <Link href='#' className='w-max'>
               <Image

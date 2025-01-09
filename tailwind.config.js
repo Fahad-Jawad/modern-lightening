@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:'#f8ef2d',
+        primaryLight:'#FCFAC0',
+        primaryDark:'#948F1B'
       },
       keyframes: {
         fadeUp: {

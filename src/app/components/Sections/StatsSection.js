@@ -35,7 +35,7 @@ const StatsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-10 mx-20 statsSection rounded-lg"
+      className="py-10 mx-4 md:mx-8 lg:mx-12 xl:mx-20 statsSection rounded-lg"
     >
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 ">
         {stats.map((stat, index) => (

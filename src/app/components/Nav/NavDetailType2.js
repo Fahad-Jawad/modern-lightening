@@ -20,10 +20,6 @@ export default function NavDetailType2({ navLink }) {
         }
     }, [navLink]);
 
-    console.log('subb',subcategories)
-    console.log('imgss',imgs)
-    console.log('nv',navLink)
-
     const handleCategoryChange = (category) => {
         setImgs(category.imgs || []);
     };

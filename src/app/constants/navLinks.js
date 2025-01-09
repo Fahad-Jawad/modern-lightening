@@ -300,7 +300,7 @@ export const navData = {
       'Dining Room': {
         link: '/dining-room',
 
-        imgs: ['/images/dining1.jpg', '/images/dining2.jpg'],
+        imgs: ['/images/testimonials.png', '/images/Scandinavian1.png'],
       },
 
       'Living Room': {
@@ -343,19 +343,19 @@ export const navData = {
 
     categories: {
       'Dining Room': {
-        link: '/dining-room',
+        link: '/products/dining-room',
 
-        imgs: ['/images/dining1.jpg', '/images/dining2.jpg'],
+        imgs: ['/images/testimonials.png', '/images/Scandinavian1.png'],
       },
 
       'Living Room': {
-        link: '/living-room',
+        link: '/products/living-room',
 
         imgs: ['/images/living1.jpg', '/images/living2.jpg'],
       },
 
       'Bed Room': {
-        link: '/bedroom',
+        link: '/products/bedroom',
 
         imgs: ['/images/bedroom1.jpg', '/images/bedroom2.jpg'],
       },
@@ -443,9 +443,9 @@ export const products = {
 };
 
 export const categoriesData = {
-  style: [1, 2], // Modern, Vintage
-  type: [1, 3], // Ceiling Light, Chandelier
-  room: [2, 4], // Table Lamp for living rooms, Wall Sconce for bedrooms
-  scandinavian: [1, 2, 2, 2, 2, 2, 2, 2, 2, 4], // Table Lamp for living rooms, Wall Sconce for bedrooms
-  bedroom: [1], // Table Lamp for living rooms, Wall Sconce for bedrooms
+  style: [1, 2],
+  type: [1, 3],
+  room: [2, 4],
+  scandinavian: [1, 2, 2, 2, 2, 2, 2, 2, 2, 4],
+  bedroom: [1],
 };

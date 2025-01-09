@@ -20,61 +20,66 @@ export default function Header() {
         draggable
         autoplay={{ delay: 5000 }}
         loop={true}
-        navigation
-        className='!h-[700px]'
+        className='h-[400px] lg:!h-[700px]'
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
       >
         <SwiperSlide>
-          <div className='w-full h-full slide1Bg flex items-center px-20'>
-            <div className='flex flex-col gap-8 '>
-              <h2 className='text-5xl text-white'>Try Out</h2>
-              <h3 className='text-7xl font-bold text-yellow-500 leading-snug'>
+          <div className='w-full h-full slide1Bg flex items-center px-4 md:px-14 lg:px-12 2xl:px-20'>
+            <div className='flex flex-col gap-3 md:gap-4 lg:gap-8 '>
+              <h2 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Try Out</h2>
+              <h3 className='text-4xl md:text-5xl xl:text-7xl font-bold text-primary leading-snug'>
                 New Best Arrivals <br /> with 30% OFF
               </h3>
-              <button className='bg-white rounded-full p-3 px-10 w-max text-xl font-semibold'>
+              <button className='bg-white rounded-full p-3 px-5 md:px-5 lg:px-10 w-max text-sm md:text-base lg:text-xl font-semibold'>
                 See More
               </button>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full h-full slide1Bg flex items-center px-20'>
+          <div className='w-full h-full slide1Bg flex items-center px-4 md:px-14 lg:px-12 2xl:px-20'>
             <div className='flex flex-col gap-8'>
-              <h2 className='text-5xl text-white'>Try Out</h2>
-              <h3 className='text-7xl font-bold text-yellow-500 leading-snug'>
+              <h2 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Try Out</h2>
+              <h3 className='text-4xl md:text-5xl xl:text-7xl font-bold text-primary leading-snug'>
                 New Best Arrivals <br /> with 30% OFF
               </h3>
-              <button className='bg-white rounded-full p-3 px-10 w-max text-xl font-semibold'>
+              <button className='bg-white rounded-full p-3 px-5 md:px-5 lg:px-10 w-max text-sm md:text-base lg:text-xl font-semibold'>
                 See More
               </button>
             </div>
           </div>{' '}
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full h-full slide1Bg flex items-center px-20'>
+          <div className='w-full h-full slide1Bg flex items-center px-4 md:px-14 lg:px-12 2xl:px-20'>
             <div className='flex flex-col gap-8'>
-              <h2 className='text-5xl text-white'>Try Out</h2>
-              <h3 className='text-7xl font-bold text-yellow-500 leading-snug'>
+              <h2 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Try Out</h2>
+              <h3 className='text-4xl md:text-5xl xl:text-7xl font-bold text-primary leading-snug'>
                 New Best Arrivals <br /> with 30% OFF
               </h3>
-              <button className='bg-white rounded-full p-3 px-10 w-max text-xl font-semibold'>
+              <button className='bg-white rounded-full p-3 px-5 md:px-5 lg:px-10 w-max text-sm md:text-base lg:text-xl font-semibold'>
                 See More
               </button>
             </div>
           </div>{' '}
         </SwiperSlide>
         <SwiperSlide>
-          <div className='w-full h-full slide1Bg flex items-center px-20'>
+          <div className='w-full h-full slide1Bg flex items-center px-4 md:px-14 lg:px-12 2xl:px-20'>
             <div className='flex flex-col gap-8'>
-              <h2 className='text-5xl text-white'>Try Out</h2>
-              <h3 className='text-7xl font-bold text-yellow-500 leading-snug'>
+              <h2 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Try Out</h2>
+              <h3 className='text-4xl md:text-5xl xl:text-7xl font-bold text-primary leading-snug'>
                 New Best Arrivals <br /> with 30% OFF
               </h3>
-              <button className='bg-white rounded-full p-3 px-10 w-max text-xl font-semibold'>
+              <button className='bg-white rounded-full p-3 px-5 md:px-5 lg:px-10 w-max text-sm md:text-base lg:text-xl font-semibold'>
                 See More
               </button>
             </div>
           </div>{' '}
         </SwiperSlide>
+        <div className="swiper-button-next !hidden md:!block"></div>
+        <div className="swiper-button-prev !hidden md:!block"></div>
       </Swiper>
     </div>
   );
