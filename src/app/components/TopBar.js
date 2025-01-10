@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function TopBar() {
   return (
-    <div className='flex justify-between items-center px-4 md:px-8 lg:px-12 2xl:px-20 py-4'>
+    <div className='flex justify-between items-center px-4 md:px-8 lg:px-12 2xl:px-20 py-4 bg-primary'>
       <div className='flex gap-5'>
         <div className='flex items-center gap-3'>
           <Image

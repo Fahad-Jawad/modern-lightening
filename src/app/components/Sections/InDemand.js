@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from '../ProductCard';
-
+import SectionDivider from '../SectionDivider';
 // Define your product categories and their products
 const categories = [
     {
@@ -167,9 +167,11 @@ export default function InDemand() {
 
   return (
     <div className='px-4 md:px-8 lg:px-12 2xl:px-20 py-10'>
-      <div className='flex flex-col gap-2 text-center' data-aos='zoom-out-up'>
+      <div className='flex flex-col gap-0 text-center' data-aos='zoom-out-up'>
         <h2 className='text-base text-primary'>Illuminate Every Space</h2>
-        <h3 className='text-3xl lg:text-4xl lg:text-4xl font-bold'>
+                <SectionDivider />
+        
+        <h3 className='text-3xl lg:text-4xl font-bold'>
           Lighting Solutions for Every Need
         </h3>
       </div>
@@ -195,7 +197,7 @@ export default function InDemand() {
               className={`flex flex-col gap-2 p-4 rounded-lg small-category group transition-all duration-300 cursor-pointer ${
                 activeCategory === category.name
                   ? 'bg-primaryLight active-small-category'
-                  : ''
+                  : 'bg-gray-100'
               }`}
               onClick={() => handleCategoryChange(category.name)}
               
@@ -205,7 +207,7 @@ export default function InDemand() {
                   className={`p-2 small-category-text-div rounded-lg transition-all duration-400 ${
                     activeCategory === category.name
                       ? 'bg-primary'
-                      : 'bg-gray-100'
+                      : 'bg-gray-200'
                   }`}
                 >
                   <p

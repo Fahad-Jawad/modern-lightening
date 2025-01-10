@@ -199,10 +199,10 @@ background-repeat: no-repeat;
   animation-fill-mode: both;
 }
 
-.accordion-child {
+.accordion-child,.productModal {
   scrollbar-width: none; /* For Firefox */
 }
 
-.accordion-child::-webkit-scrollbar {
+.accordion-child::-webkit-scrollbar,.productModal::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and newer versions of Edge */
 }

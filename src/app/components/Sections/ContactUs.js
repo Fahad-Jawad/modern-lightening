@@ -3,8 +3,9 @@ import React from 'react';
 
 export default function ContactUs() {
   return (
-    <div className='flex px-4 md:px-8 lg:px-12 2xl:px-20 py-10 overflow-x-hidden flex-col lg:flex-row'>
-      <div className='w-full lg:w-1/3'>
+    <div className='flex px-4 md:px-8 lg:px-12 2xl:px-20 py-10 overflow-x-hidden flex-col lg:flex-row relative overflow-hidden rounded-xl'>
+      <Image src={'/images/contactSectionBg.png'} alt='contact section background image' width={1250} height={1000} className='absolute top-0 left-0 w-full opacity-10 z-0 h-auto' />
+      <div className='w-full lg:w-1/3 z-10'>
         <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold uppercase' data-aos='zoom-in'>
           Got some burning questions?
         </h2>
@@ -74,8 +75,8 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <div className='w-full lg:w-2/3 flex justify-end mt-10 lg:mt-0'>
-        <div className='w-full lg:w-2/3 rounded-xl shadow-2xl p-10' data-aos='zoom-in-left'
+      <div className='w-full lg:w-2/3 flex justify-end mt-10 lg:mt-0 z-10 '>
+        <div className='w-full lg:w-2/3 rounded-xl shadow-2xl p-10 bg-white' data-aos='zoom-in-left'
           data-aos-delay='100'>
           <h2 className='text-base lg:text-xl font-semibold text-primary'>
             Have Question?

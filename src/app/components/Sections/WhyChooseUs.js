@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
+import SectionDivider from '../SectionDivider';
 
 export default function WhyChooseUs() {
   return (
     <div className='flex flex-col px-4 md:px-8 lg:px-12 2xl:px-20 py-10'>
-      <div className='flex flex-col gap-2 text-center' data-aos="zoom-out-up">
+      <div className='flex flex-col gap-0 text-center' data-aos="zoom-out-up">
         <h2 className='text-base text-primary'>Why Choose US</h2>
+        <SectionDivider />
         <h3 className='text-3xl lg:text-4xl font-bold'>Why Choose MOD Lights</h3>
       </div>
 
