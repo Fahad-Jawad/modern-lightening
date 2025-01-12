@@ -208,7 +208,7 @@ background-repeat: no-repeat;
 }
 
 .contactUs{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.85)),
     url('/images/contactSectionBg.jpeg');
   background-size: cover;
   background-position: center;
