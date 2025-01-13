@@ -35,7 +35,7 @@ export default function ProductModal() {
       onClick={handleOverlayClick}
     >
       <div
-        className={`bg-white rounded-lg shadow-lg w-11/12 p-3 lg:p-5 md:p-8 fade-up overflow-scroll max-h-[600px] lg:max-h[600px] `}
+        className={`bg-white rounded-lg shadow-lg w-11/12 p-3 lg:p-5 md:p-8 product-card fade-up max-h-[600px] lg:!max-h-[2000px] `}
       >
         {/* Modal Header */}
         <div className='flex justify-between items-center border-b pb-4 mb-4'>
@@ -62,7 +62,7 @@ export default function ProductModal() {
         </div>
 
         {/* Modal Body */}
-        <div className='flex flex-col lg:flex-row gap-6 max-h-[400px] lg:max-h[600px] overflow-scroll productModal'>
+        <div className='flex flex-col lg:flex-row gap-6 overflow-scroll productModal pb-6 lg:pb-0'>
           {/* Images */}
           <div className='flex flex-col items-center lg:w-1/2'>
             <img

@@ -199,7 +199,7 @@ background-repeat: no-repeat;
   animation-fill-mode: both;
 }
 
-.accordion-child,.productModal {
+.accordion-child,.productModal,.product-card {
   scrollbar-width: none; /* For Firefox */
 }
 
@@ -214,4 +214,25 @@ background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   
+}
+
+
+
+.productModal {
+  max-height: 400px; /* Default for mobile and smaller screens */
+  overflow-y: auto; /* Add scrolling if content exceeds the max height */
+}
+
+@media (min-width: 768px) {
+  /* Apply for medium screens and larger */
+  .productModal {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Apply for large screens and larger */
+  .productModal {
+    max-height: 1000px; /* Let it grow naturally */
+  }
 }
