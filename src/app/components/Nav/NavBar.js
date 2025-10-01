@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { navData } from '../../constants/navLinks';
+import { navData } from '../../constants/data';
 import NavDetailType1 from './NavDetailType1';
 import NavDetailType2 from './NavDetailType2';
 import Image from 'next/image';

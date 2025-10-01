@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import ProductCard from '../ProductCard';
-import { products } from '@/app/constants/navLinks';
+import { products } from '@/app/constants/data';
 import SectionDivider from '../SectionDivider';
 
 export default function PopularProducts() {

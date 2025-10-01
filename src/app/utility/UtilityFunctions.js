@@ -1,4 +1,4 @@
-import { categoriesData } from "../constants/navLinks";
+import { categoriesData } from "../constants/data";
 
 export const getProductsByCategory = (category) => {
     const productIds = categoriesData[category] || [];

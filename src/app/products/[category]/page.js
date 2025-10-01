@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import ProductCard from '@/app/components/ProductCard';
-import { products, categoriesData } from '@/app/constants/navLinks';
+import { products, categoriesData } from '@/app/constants/data';
 import Accordion from '@/app/components/Accordion';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -25,8 +25,9 @@ export default function ProductCategoryPage({ params }) {
     async function fetchCategory() {
       setLoading(true);
       const { category } = await params; // Await the params
-      let cat = category.replace('-', ' ').toLowerCase();
+      let cat = category.replace('-', ' ');
       setCategory(cat);
+      console.log(cat)
 
       // Fetch the product IDs associated with the category
       const productIds = categoriesData[cat] || [];
@@ -194,8 +195,41 @@ export default function ProductCategoryPage({ params }) {
                 className='p-4 rounded-lg bg-white !text-lg'
               >
                 <div className='flex flex-col gap-1 text-base'>
-                  <Link href='#' className='underline-animation w-max'>
-                    Modern Chandelier
+                  <Link
+                    href='/products/ceilingLight'
+                    className='underline-animation w-max'
+                  >
+                    Ceiling Light
+                  </Link>
+                  <Link
+                    href='/products/chandlier'
+                    className='underline-animation w-max'
+                  >
+                    Chandelier
+                  </Link>
+                  <Link
+                    href='/products/islandLights'
+                    className='underline-animation w-max'
+                  >
+                    Island Lights
+                  </Link>
+                  <Link
+                    href='/products/outdoorWallLight'
+                    className='underline-animation w-max'
+                  >
+                    Outdoor Wall Light
+                  </Link>
+                  <Link
+                    href='/products/vanityLight'
+                    className='underline-animation w-max'
+                  >
+                    Vanity Light
+                  </Link>
+                  <Link
+                    href='/products/wallLights'
+                    className='underline-animation w-max'
+                  >
+                    Wall Lights
                   </Link>
                 </div>
               </Accordion>
@@ -239,8 +273,41 @@ export default function ProductCategoryPage({ params }) {
                   className='p-4 rounded-lg bg-white !text-base'
                 >
                   <div className='flex flex-col gap-1 text-base'>
-                    <Link href='#' className='underline-animation w-max'>
-                      Modern Chandelier
+                    <Link
+                      href='/products/ceilingLight'
+                      className='underline-animation w-max'
+                    >
+                      Ceiling Light
+                    </Link>
+                    <Link
+                      href='/products/chandlier'
+                      className='underline-animation w-max'
+                    >
+                      Chandelier
+                    </Link>
+                    <Link
+                      href='/products/islandLights'
+                      className='underline-animation w-max'
+                    >
+                      Island Lights
+                    </Link>
+                    <Link
+                      href='/products/outdoorWallLight'
+                      className='underline-animation w-max'
+                    >
+                      Outdoor Wall Light
+                    </Link>
+                    <Link
+                      href='/products/vanityLight'
+                      className='underline-animation w-max'
+                    >
+                      Vanity Light
+                    </Link>
+                    <Link
+                      href='/products/wallLights'
+                      className='underline-animation w-max'
+                    >
+                      Wall Lights
                     </Link>
                   </div>
                 </Accordion>
